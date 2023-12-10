@@ -1,4 +1,4 @@
-# Library
+# Back-End of Local-Library-Management-System
 
 ### You need to have nodemon and concurrently globaly installed on your system in order to run the project in dev mode.
 
