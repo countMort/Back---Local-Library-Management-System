@@ -8,11 +8,11 @@ const sample_book = books[0]
 const book_keys = Object.keys(sample_book)
 export const BooksRoute = Router()
 
-BooksRoute.get("/", CheckToken, async (req, res, next) => {
+BooksRoute.get("/", async (req, res, next) => {
   res.json(books)
 })
 
-BooksRoute.post("/", CheckToken, async (req, res, next) => {
+BooksRoute.post("/", async (req, res, next) => {
   try {
     const new_book = {
       ...sample_book,
